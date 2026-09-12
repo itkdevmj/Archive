@@ -1,0 +1,421 @@
+﻿	<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+		<PropertyGroup>
+			<ProjectGuid>{134ACF5B-5824-4252-A397-FB9839AB6B14}</ProjectGuid>
+			<ProjectVersion>12.0</ProjectVersion>
+			<MainSource>LANDARCHIVE.cpp</MainSource>
+			<Config Condition="'$(Config)'==''">Debug</Config>
+		</PropertyGroup>
+		<PropertyGroup Condition="'$(Config)'=='Base' or '$(Base)'!=''">
+			<Base>true</Base>
+		</PropertyGroup>
+		<PropertyGroup Condition="'$(Config)'=='Debug' or '$(Cfg_1)'!=''">
+			<Cfg_1>true</Cfg_1>
+			<CfgParent>Base</CfgParent>
+			<Base>true</Base>
+		</PropertyGroup>
+		<PropertyGroup Condition="'$(Config)'=='Release' or '$(Cfg_2)'!=''">
+			<Cfg_2>true</Cfg_2>
+			<CfgParent>Base</CfgParent>
+			<Base>true</Base>
+		</PropertyGroup>
+		<PropertyGroup Condition="'$(Base)'!=''">
+			<BRCC_IncludePath>$(BDS)\include;$(BDS)\include\dinkumware;$(BDS)\include\vcl;C:\Users\SONGMINJI\Documents\Component\Graphics32_2010;C:\Users\SONGMINJI\Documents\Component\bsfsource;C:\Users\SONGMINJI\Documents\Component\TMSComponentPack_8.0;C:\Users\SONGMINJI\Documents\Component\TMSComponentPack_8.0\XlsAdapter;JSonCpp\;JSonCpp\json\;JSonCpp\src\;$(BDS)\include;$(BDS)\include\dinkumware;$(BDS)\include\vcl;C:\Users\SONGMINJI\Documents\Component\Graphics32_2010;C:\Users\SONGMINJI\Documents\Component\bsfsource;C:\Users\SONGMINJI\Documents\Component\TMSComponentPack_8.0;C:\Users\SONGMINJI\Documents\Component\TMSComponentPack_8.0\XlsAdapter;JSonCpp\;JSonCpp\json\;JSonCpp\src\;$(BDS)\include;$(BDS)\include\dinkumware;$(BDS)\include\vcl;C:\Users\SONGMINJI\Documents\Component\Graphics32_2010;C:\Users\SONGMINJI\Documents\Component\bsfsource;C:\Users\SONGMINJI\Documents\Component\TMSComponentPack_8.0;C:\Users\SONGMINJI\Documents\Component\TMSComponentPack_8.0\XlsAdapter;$(BRCC_IncludePath)</BRCC_IncludePath>
+			<TASM_IncludePath>$(BDS)\include;$(BDS)\include\dinkumware;$(BDS)\include\vcl;C:\Users\SONGMINJI\Documents\Component\Graphics32_2010;C:\Users\SONGMINJI\Documents\Component\bsfsource;C:\Users\SONGMINJI\Documents\Component\TMSComponentPack_8.0;C:\Users\SONGMINJI\Documents\Component\TMSComponentPack_8.0\XlsAdapter;JSonCpp\;JSonCpp\json\;JSonCpp\src\;$(BDS)\include;$(BDS)\include\dinkumware;$(BDS)\include\vcl;C:\Users\SONGMINJI\Documents\Component\Graphics32_2010;C:\Users\SONGMINJI\Documents\Component\bsfsource;C:\Users\SONGMINJI\Documents\Component\TMSComponentPack_8.0;C:\Users\SONGMINJI\Documents\Component\TMSComponentPack_8.0\XlsAdapter;JSonCpp\;JSonCpp\json\;JSonCpp\src\;$(BDS)\include;$(BDS)\include\dinkumware;$(BDS)\include\vcl;C:\Users\SONGMINJI\Documents\Component\Graphics32_2010;C:\Users\SONGMINJI\Documents\Component\bsfsource;C:\Users\SONGMINJI\Documents\Component\TMSComponentPack_8.0;C:\Users\SONGMINJI\Documents\Component\TMSComponentPack_8.0\XlsAdapter;$(TASM_IncludePath)</TASM_IncludePath>
+			<BCC_IncludePath>$(BDS)\include;$(BDS)\include\dinkumware;$(BDS)\include\vcl;C:\Users\SONGMINJI\Documents\Component\Graphics32_2010;C:\Users\SONGMINJI\Documents\Component\bsfsource;C:\Users\SONGMINJI\Documents\Component\TMSComponentPack_8.0;C:\Users\SONGMINJI\Documents\Component\TMSComponentPack_8.0\XlsAdapter;D:\01_DEV\01_C++\01_BUILDER2010\01_LANDARCHIVE\00_Src\01_LandArchive_Debug\JSonCpp;JSonCpp\;JSonCpp\json\;JSonCpp\src\;$(BDS)\include;$(BDS)\include\dinkumware;$(BDS)\include\vcl;C:\Users\SONGMINJI\Documents\Component\Graphics32_2010;C:\Users\SONGMINJI\Documents\Component\bsfsource;C:\Users\SONGMINJI\Documents\Component\TMSComponentPack_8.0;C:\Users\SONGMINJI\Documents\Component\TMSComponentPack_8.0\XlsAdapter;$(BCC_IncludePath)</BCC_IncludePath>
+			<BCC_MonitorInlinePtrAccess>true</BCC_MonitorInlinePtrAccess>
+			<BCC_MonitorGlobalAndStackData>true</BCC_MonitorGlobalAndStackData>
+			<BCC_MonitorThis>true</BCC_MonitorThis>
+			<ILINK_MapFileType>DetailedSegments</ILINK_MapFileType>
+			<LinkPackageStatics>rtl.lib;vcl.lib;vclimg.lib;bcbie.lib;IndySystem.lib;IndyProtocols.lib;IndyCore.lib;tmsd2010.lib;adortl.lib;dbrtl.lib;bdertl.lib;vclx.lib;xmlrtl.lib;vclactnband.lib;vcldb.lib;VclSmp.lib;tmsexd2010.lib;bsfcb2010.lib;GR32_RS2010.lib;tmsxlsd2010.lib;bcbsmp.lib;Tee.lib;webdsnap.lib;inetdb.lib;inet.lib;dsnapcon.lib;dsnap.lib;SigCtl.lib;dbexpress.lib;DbxClientDriver.lib;DbxCommonDriver.lib</LinkPackageStatics>
+			<BCC_DataAlignment>Byte</BCC_DataAlignment>
+			<FinalOutputDir>BIN\</FinalOutputDir>
+			<OutputExt>exe</OutputExt>
+			<PackageImports>vclx.bpi;vcl.bpi;vclimg.bpi;dbrtl.bpi;Rave77VCL.bpi;bdertl.bpi;rtl.bpi;bcbie.bpi;vclactnband.bpi;xmlrtl.bpi;bcbsmp.bpi;vcldb.bpi;vcldbx.bpi;vcltouch.bpi;dsnap.bpi;dsnapcon.bpi;TeeUI.bpi;TeeDB.bpi;Tee.bpi;vclib.bpi;ibxpress.bpi;adortl.bpi;IndyCore.bpi;IndySystem.bpi;IndyProtocols.bpi;inet.bpi;intrawebdb_100_140.bpi;Intraweb_100_140.bpi;vclie.bpi;websnap.bpi;webdsnap.bpi;inetdb.bpi;inetdbbde.bpi;inetdbxpress.bpi;soaprtl.bpi;vclribbon.bpi;dbexpress.bpi;DbxCommonDriver.bpi;DataSnapIndy10ServerTransport.bpi;DataSnapProviderClient.bpi;DbxClientDriver.bpi;DataSnapServer.bpi;DBXInterBaseDriver.bpi;DBXMySQLDriver.bpi;dbxcds.bpi;DBXFirebirdDriver.bpi;DBXSybaseASEDriver.bpi;DBXSybaseASADriver.bpi;DBXOracleDriver.bpi;DBXMSSQLDriver.bpi;DBXInformixDriver.bpi;DBXDb2Driver.bpi;GR32_DSGN_RS2010.bpi;GR32_RS2010.bpi;tmsd2010.bpi;VclSmp.bpi;tmsexd2010.bpi;tmswizd2010.bpi;tmsxlsd2010.bpi;bsfcb2010.bpi;SigCtl.bpi</PackageImports>
+			<Multithreaded>true</Multithreaded>
+			<AllPackageLibs>rtl.lib;vcl.lib;vclimg.lib;bcbie.lib;IndySystem.lib;IndyProtocols.lib;IndyCore.lib;tmsd2010.lib;adortl.lib;dbrtl.lib;bdertl.lib;vclx.lib;xmlrtl.lib;vclactnband.lib;vcldb.lib;VclSmp.lib;tmsexd2010.lib;bsfcb2010.lib;GR32_RS2010.lib;tmsxlsd2010.lib;bcbsmp.lib;Tee.lib;webdsnap.lib;inetdb.lib;inet.lib;dsnapcon.lib;dsnap.lib;SigCtl.lib;dbexpress.lib;DbxClientDriver.lib;DbxCommonDriver.lib</AllPackageLibs>
+			<ProjectType>CppVCLApplication</ProjectType>
+			<DCC_CBuilderOutput>JPHNE</DCC_CBuilderOutput>
+			<IncludePath>JSonCpp\;JSonCpp\json\;JSonCpp\src\;$(BDS)\include;$(BDS)\include\dinkumware;$(BDS)\include\vcl;C:\Users\SONGMINJI\Documents\Component\Graphics32_2010;C:\Users\SONGMINJI\Documents\Component\bsfsource;C:\Users\SONGMINJI\Documents\Component\TMSComponentPack_8.0;C:\Users\SONGMINJI\Documents\Component\TMSComponentPack_8.0\XlsAdapter;$(IncludePath)</IncludePath>
+			<ILINK_LibraryPath>JSonCpp\;JSonCpp\json\;JSonCpp\src\;C:\Program Files (x86)\Embarcadero\RAD Studio\7.0\lib\psdk\;$(BDS)\lib\psdk\;$(BDS)\lib\obj;C:\Users\SONGMINJI\Documents\Component\Graphics32_2010;C:\Users\SONGMINJI\Documents\Component\bsfsource;C:\Users\SONGMINJI\Documents\Component\TMSComponentPack_8.0;C:\Users\SONGMINJI\Documents\Component\TMSComponentPack_8.0\XlsAdapter;$(ILINK_LibraryPath)</ILINK_LibraryPath>
+			<BCC_wpar>false</BCC_wpar>
+			<BCC_OptimizeForSpeed>true</BCC_OptimizeForSpeed>
+			<BCC_ExtendedErrorInfo>true</BCC_ExtendedErrorInfo>
+		</PropertyGroup>
+		<PropertyGroup Condition="'$(Cfg_1)'!=''">
+			<BCC_OptimizeForSpeed>false</BCC_OptimizeForSpeed>
+			<BCC_DisableOptimizations>true</BCC_DisableOptimizations>
+			<DCC_Optimize>false</DCC_Optimize>
+			<DCC_DebugInfoInExe>true</DCC_DebugInfoInExe>
+			<Defines>_DEBUG;$(Defines)</Defines>
+			<BCC_InlineFunctionExpansion>false</BCC_InlineFunctionExpansion>
+			<IntermediateOutputDir>OBJ\Debug</IntermediateOutputDir>
+			<BCC_UseRegisterVariables>None</BCC_UseRegisterVariables>
+			<DCC_Define>DEBUG</DCC_Define>
+			<BCC_DebugLineNumbers>true</BCC_DebugLineNumbers>
+			<TASM_DisplaySourceLines>true</TASM_DisplaySourceLines>
+			<BCC_StackFrames>true</BCC_StackFrames>
+			<ILINK_LibraryPath>$(BDS)\lib\debug;$(ILINK_LibraryPath)</ILINK_LibraryPath>
+			<ILINK_FullDebugInfo>true</ILINK_FullDebugInfo>
+			<TASM_Debugging>Full</TASM_Debugging>
+			<BCC_SourceDebuggingOn>true</BCC_SourceDebuggingOn>
+		</PropertyGroup>
+		<PropertyGroup Condition="'$(Cfg_2)'!=''">
+			<Defines>NDEBUG;$(Defines)</Defines>
+			<IntermediateOutputDir>OBJ\Release</IntermediateOutputDir>
+			<ILINK_LibraryPath>$(BDS)\lib\release;$(ILINK_LibraryPath)</ILINK_LibraryPath>
+			<TASM_Debugging>None</TASM_Debugging>
+		</PropertyGroup>
+		<ItemGroup>
+			<CppCompile Include="untAlphaDoc8.cpp">
+				<Form>frmAlphaDoc8</Form>
+				<DependentOn>untAlphaDoc8.h</DependentOn>
+				<BuildOrder>59</BuildOrder>
+			</CppCompile>
+			<CppCompile Include="untAlphaView.cpp">
+				<Form>frmAlphaView</Form>
+				<DependentOn>untAlphaView.h</DependentOn>
+				<BuildOrder>35</BuildOrder>
+			</CppCompile>
+			<CppCompile Include="untDoc8History.cpp">
+				<Form>frmDoc8History</Form>
+				<DependentOn>untDoc8History.h</DependentOn>
+				<BuildOrder>64</BuildOrder>
+			</CppCompile>
+			<CppCompile Include="untCalculator.cpp">
+				<Form>frmCalculator</Form>
+				<DependentOn>untCalculator.h</DependentOn>
+				<BuildOrder>8</BuildOrder>
+			</CppCompile>
+			<CppCompile Include="LANDARCHIVE.cpp">
+				<BuildOrder>0</BuildOrder>
+			</CppCompile>
+			<CppCompile Include="untTreeSystem.cpp">
+				<DependentOn>untTreeSystem.h</DependentOn>
+				<BuildOrder>30</BuildOrder>
+			</CppCompile>
+			<CppCompile Include="untUserLogList.cpp">
+				<Form>frmUserLogList</Form>
+				<DependentOn>untUserLogList.h</DependentOn>
+				<BuildOrder>12</BuildOrder>
+			</CppCompile>
+			<CppCompile Include="PrintSetting.cpp">
+				<Form>frmPrintSetting</Form>
+				<DependentOn>PrintSetting.h</DependentOn>
+				<BuildOrder>16</BuildOrder>
+			</CppCompile>
+			<CppCompile Include="untUserManagement.cpp">
+				<Form>frmUserManagement</Form>
+				<DependentOn>untUserManagement.h</DependentOn>
+				<BuildOrder>13</BuildOrder>
+			</CppCompile>
+			<None Include="LANDARCHIVE.todo"/>
+			<ResFiles Include="LANDARCHIVE.res">
+				<BuildOrder>1</BuildOrder>
+			</ResFiles>
+			<CppCompile Include="untAreaCalculatorTypeA.cpp">
+				<Form>frmAreaCalculatorTypeA</Form>
+				<DependentOn>untAreaCalculatorTypeA.h</DependentOn>
+				<BuildOrder>20</BuildOrder>
+			</CppCompile>
+			<CppCompile Include="untStat.cpp">
+				<Form>frmStat</Form>
+				<DependentOn>untStat.h</DependentOn>
+				<BuildOrder>58</BuildOrder>
+			</CppCompile>
+			<CppCompile Include="untSidoCode.cpp">
+				<Form>frmSidoCode</Form>
+				<DependentOn>untSidoCode.h</DependentOn>
+				<BuildOrder>17</BuildOrder>
+			</CppCompile>
+			<CppCompile Include="untProgramClose.cpp">
+				<Form>frmProgramClose</Form>
+				<DependentOn>untProgramClose.h</DependentOn>
+				<BuildOrder>22</BuildOrder>
+			</CppCompile>
+			<CppCompile Include="TOcrThread.cpp">
+				<DependentOn>TOcrThread.h</DependentOn>
+				<BuildOrder>52</BuildOrder>
+			</CppCompile>
+			<CppCompile Include="untTempDoc.cpp">
+				<Form>frmTempDoc</Form>
+				<DependentOn>untTempDoc.h</DependentOn>
+				<BuildOrder>50</BuildOrder>
+			</CppCompile>
+			<CppCompile Include="untDoc8View.cpp">
+				<Form>frmDoc8View</Form>
+				<DependentOn>untDoc8View.h</DependentOn>
+				<BuildOrder>60</BuildOrder>
+			</CppCompile>
+			<CppCompile Include="untUserAdd.cpp">
+				<Form>frmUserAdd</Form>
+				<DependentOn>untUserAdd.h</DependentOn>
+				<BuildOrder>11</BuildOrder>
+			</CppCompile>
+			<CppCompile Include="untProgramCloseQ.cpp">
+				<Form>frmProgramCloseQ</Form>
+				<DependentOn>untProgramCloseQ.h</DependentOn>
+				<BuildOrder>23</BuildOrder>
+			</CppCompile>
+			<CppCompile Include="untMemoHis.cpp">
+				<Form>frmMemoHis</Form>
+				<DependentOn>untMemoHis.h</DependentOn>
+				<BuildOrder>36</BuildOrder>
+			</CppCompile>
+			<CppCompile Include="untAlphaSub.cpp">
+				<Form>frmAlphaSub</Form>
+				<DependentOn>untAlphaSub.h</DependentOn>
+				<BuildOrder>34</BuildOrder>
+			</CppCompile>
+			<CppCompile Include="untHanja.cpp">
+				<Form>frmHanja</Form>
+				<DependentOn>untHanja.h</DependentOn>
+				<BuildOrder>9</BuildOrder>
+			</CppCompile>
+			<CppCompile Include="untFtpControl.cpp">
+				<Form>frmFtpControl</Form>
+				<DependentOn>untFtpControl.h</DependentOn>
+				<BuildOrder>5</BuildOrder>
+			</CppCompile>
+			<CppCompile Include="untMainSub.cpp">
+				<DependentOn>untMainSub.h</DependentOn>
+				<BuildOrder>62</BuildOrder>
+			</CppCompile>
+			<CppCompile Include="untFunc.cpp">
+				<DependentOn>untFunc.h</DependentOn>
+				<BuildOrder>28</BuildOrder>
+			</CppCompile>
+			<CppCompile Include="untMemoRegist.cpp">
+				<Form>frmMemoRegist</Form>
+				<DependentOn>untMemoRegist.h</DependentOn>
+				<BuildOrder>40</BuildOrder>
+			</CppCompile>
+			<CppCompile Include="GPoint.cpp">
+				<DependentOn>GPoint.h</DependentOn>
+				<BuildOrder>7</BuildOrder>
+			</CppCompile>
+			<CppCompile Include="untChangeMenu.cpp">
+				<Form>frmChangeMenu</Form>
+				<DependentOn>untChangeMenu.h</DependentOn>
+				<BuildOrder>31</BuildOrder>
+			</CppCompile>
+			<CppCompile Include="untAbout.cpp">
+				<Form>frmAbout</Form>
+				<DependentOn>untAbout.h</DependentOn>
+				<BuildOrder>15</BuildOrder>
+			</CppCompile>
+			<CppCompile Include="untSearch.cpp">
+				<Form>frmSearch</Form>
+				<DependentOn>untSearch.h</DependentOn>
+				<BuildOrder>4</BuildOrder>
+			</CppCompile>
+			<CppCompile Include="untAlphaView2.cpp">
+				<Form>frmAlphaView2</Form>
+				<DependentOn>untAlphaView2.h</DependentOn>
+				<BuildOrder>38</BuildOrder>
+			</CppCompile>
+			<CppCompile Include="MessageSrc.cpp">
+				<Form>frmMsg</Form>
+				<DependentOn>MessageSrc.h</DependentOn>
+				<BuildOrder>24</BuildOrder>
+			</CppCompile>
+			<CppCompile Include="untCalcDate.cpp">
+				<Form>frmCalcDate</Form>
+				<DependentOn>untCalcDate.h</DependentOn>
+				<BuildOrder>21</BuildOrder>
+			</CppCompile>
+			<CppCompile Include="untMemo.cpp">
+				<Form>frmMemo</Form>
+				<DependentOn>untMemo.h</DependentOn>
+				<BuildOrder>25</BuildOrder>
+			</CppCompile>
+			<CppCompile Include="untMemoViewer.cpp">
+				<Form>frmMemoViewer</Form>
+				<DependentOn>untMemoViewer.h</DependentOn>
+				<BuildOrder>26</BuildOrder>
+			</CppCompile>
+			<None Include="common.h">
+				<BuildOrder>6</BuildOrder>
+			</None>
+			<CppCompile Include="untResultList.cpp">
+				<Form>frmResultList</Form>
+				<DependentOn>untResultList.h</DependentOn>
+				<BuildOrder>19</BuildOrder>
+			</CppCompile>
+			<CppCompile Include="untEncrypt.cpp">
+				<DependentOn>untEncrypt.h</DependentOn>
+				<BuildOrder>27</BuildOrder>
+			</CppCompile>
+			<CppCompile Include="untSettingEnv.cpp">
+				<Form>frmSettingEnv</Form>
+				<DependentOn>untSettingEnv.h</DependentOn>
+				<BuildOrder>18</BuildOrder>
+			</CppCompile>
+			<CppCompile Include="mainSrc.cpp">
+				<Form>frmMain</Form>
+				<DependentOn>mainSrc.h</DependentOn>
+				<BuildOrder>3</BuildOrder>
+			</CppCompile>
+			<LibFiles Include="FreeImageBc.lib">
+				<IgnorePath>true</IgnorePath>
+				<BuildOrder>5</BuildOrder>
+			</LibFiles>
+			<CppCompile Include="untMemoBatch.cpp">
+				<Form>frmMemoBatch</Form>
+				<DependentOn>untMemoBatch.h</DependentOn>
+				<BuildOrder>39</BuildOrder>
+			</CppCompile>
+			<CppCompile Include="untResultList2.cpp">
+				<Form>frmResultList2</Form>
+				<DependentOn>untResultList2.h</DependentOn>
+				<BuildOrder>63</BuildOrder>
+			</CppCompile>
+			<CppCompile Include="untPreview.cpp">
+				<Form>frmPreview</Form>
+				<DependentOn>untPreview.h</DependentOn>
+				<BuildOrder>65</BuildOrder>
+			</CppCompile>
+			<None Include="untDoc08Data.h">
+				<BuildOrder>54</BuildOrder>
+			</None>
+			<CppCompile Include="untAlphaSub2.cpp">
+				<Form>frmAlphaSub2</Form>
+				<DependentOn>untAlphaSub2.h</DependentOn>
+				<BuildOrder>37</BuildOrder>
+			</CppCompile>
+			<CppCompile Include="untReleaseList.cpp">
+				<Form>frmReleaseList</Form>
+				<DependentOn>untReleaseList.h</DependentOn>
+				<BuildOrder>16</BuildOrder>
+			</CppCompile>
+			<CppCompile Include="untAIOCR.cpp">
+				<DependentOn>untAIOCR.h</DependentOn>
+				<BuildOrder>50</BuildOrder>
+			</CppCompile>
+			<CppCompile Include="untSql.cpp">
+				<Form>frmSql</Form>
+				<DependentOn>untSql.h</DependentOn>
+				<BuildOrder>31</BuildOrder>
+			</CppCompile>
+			<CppCompile Include="untDoc08Data.cpp">
+				<BuildOrder>53</BuildOrder>
+			</CppCompile>
+			<FormResources Include="untAlphaDoc8.dfm"/>
+			<FormResources Include="untAlphaView.dfm"/>
+			<FormResources Include="untDoc8History.dfm"/>
+			<FormResources Include="untCalculator.dfm"/>
+			<FormResources Include="untUserLogList.dfm"/>
+			<FormResources Include="PrintSetting.dfm"/>
+			<FormResources Include="untUserManagement.dfm"/>
+			<FormResources Include="untAreaCalculatorTypeA.dfm"/>
+			<FormResources Include="untStat.dfm"/>
+			<FormResources Include="untSidoCode.dfm"/>
+			<FormResources Include="untProgramClose.dfm"/>
+			<FormResources Include="untTempDoc.dfm"/>
+			<FormResources Include="untDoc8View.dfm"/>
+			<FormResources Include="untUserAdd.dfm"/>
+			<FormResources Include="untProgramCloseQ.dfm"/>
+			<FormResources Include="untMemoHis.dfm"/>
+			<FormResources Include="untAlphaSub.dfm"/>
+			<FormResources Include="untHanja.dfm"/>
+			<FormResources Include="untFtpControl.dfm"/>
+			<FormResources Include="untMemoRegist.dfm"/>
+			<FormResources Include="untChangeMenu.dfm"/>
+			<FormResources Include="untAbout.dfm"/>
+			<FormResources Include="untSearch.dfm"/>
+			<FormResources Include="untAlphaView2.dfm"/>
+			<FormResources Include="MessageSrc.dfm"/>
+			<FormResources Include="untCalcDate.dfm"/>
+			<FormResources Include="untMemo.dfm"/>
+			<FormResources Include="untMemoViewer.dfm"/>
+			<FormResources Include="untResultList.dfm"/>
+			<FormResources Include="untSettingEnv.dfm"/>
+			<FormResources Include="mainSrc.dfm"/>
+			<FormResources Include="untMemoBatch.dfm"/>
+			<FormResources Include="untResultList2.dfm"/>
+			<FormResources Include="untPreview.dfm"/>
+			<FormResources Include="untAlphaSub2.dfm"/>
+			<FormResources Include="untReleaseList.dfm"/>
+			<FormResources Include="untSql.dfm"/>
+			<BuildConfiguration Include="Base">
+				<Key>Base</Key>
+			</BuildConfiguration>
+			<BuildConfiguration Include="Debug">
+				<Key>Cfg_1</Key>
+				<CfgParent>Base</CfgParent>
+			</BuildConfiguration>
+			<BuildConfiguration Include="Release">
+				<Key>Cfg_2</Key>
+				<CfgParent>Base</CfgParent>
+			</BuildConfiguration>
+		</ItemGroup>
+		<Import Project="$(BDS)\Bin\CodeGear.Cpp.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Cpp.Targets')"/>
+		<ProjectExtensions>
+			<Borland.Personality>CPlusPlusBuilder.Personality.12</Borland.Personality>
+			<Borland.ProjectType>CppVCLApplication</Borland.ProjectType>
+			<BorlandProject>
+				<CPlusPlusBuilder.Personality>
+					<Source>
+						<Source Name="MainSource">LANDARCHIVE.cpp</Source>
+					</Source>
+					<VersionInfo>
+						<VersionInfo Name="IncludeVerInfo">True</VersionInfo>
+						<VersionInfo Name="AutoIncBuild">False</VersionInfo>
+						<VersionInfo Name="MajorVer">1</VersionInfo>
+						<VersionInfo Name="MinorVer">0</VersionInfo>
+						<VersionInfo Name="Release">0</VersionInfo>
+						<VersionInfo Name="Build">10</VersionInfo>
+						<VersionInfo Name="Debug">False</VersionInfo>
+						<VersionInfo Name="PreRelease">False</VersionInfo>
+						<VersionInfo Name="Special">False</VersionInfo>
+						<VersionInfo Name="Private">False</VersionInfo>
+						<VersionInfo Name="DLL">False</VersionInfo>
+						<VersionInfo Name="Locale">1042</VersionInfo>
+						<VersionInfo Name="CodePage">949</VersionInfo>
+					</VersionInfo>
+					<VersionInfoKeys>
+						<VersionInfoKeys Name="CompanyName">ITKorea</VersionInfoKeys>
+						<VersionInfoKeys Name="FileDescription">지적문서통합관리시스템</VersionInfoKeys>
+						<VersionInfoKeys Name="FileVersion">1.0.0.10</VersionInfoKeys>
+						<VersionInfoKeys Name="InternalName"/>
+						<VersionInfoKeys Name="LegalCopyright">Copyright © (주)아이티코리아. All Rights Reserved.</VersionInfoKeys>
+						<VersionInfoKeys Name="LegalTrademarks"/>
+						<VersionInfoKeys Name="OriginalFilename"/>
+						<VersionInfoKeys Name="ProductName">LANDARCHIVE</VersionInfoKeys>
+						<VersionInfoKeys Name="ProductVersion">2021</VersionInfoKeys>
+						<VersionInfoKeys Name="Comments">구대장한글화검수</VersionInfoKeys>
+					</VersionInfoKeys>
+					<Debugging>
+						<Debugging Name="DebugSourceDirs"/>
+					</Debugging>
+					<Parameters>
+						<Parameters Name="RunParams"/>
+						<Parameters Name="Launcher"/>
+						<Parameters Name="UseLauncher">False</Parameters>
+						<Parameters Name="DebugCWD"/>
+						<Parameters Name="HostApplication"/>
+						<Parameters Name="RemoteHost"/>
+						<Parameters Name="RemotePath"/>
+						<Parameters Name="RemoteParams"/>
+						<Parameters Name="RemoteLauncher"/>
+						<Parameters Name="UseRemoteLauncher">False</Parameters>
+						<Parameters Name="RemoteCWD"/>
+						<Parameters Name="RemoteDebug">False</Parameters>
+						<Parameters Name="Debug Symbols Search Path"/>
+						<Parameters Name="LoadAllSymbols">True</Parameters>
+						<Parameters Name="LoadUnspecifiedSymbols">False</Parameters>
+					</Parameters>
+					<Excluded_Packages>
+						<Excluded_Packages Name="C:\Users\Public\Documents\RAD Studio\7.0\Bpl\tmsded2010.bpl">TMS Component Pack design time support</Excluded_Packages>
+						<Excluded_Packages Name="C:\Users\Public\Documents\RAD Studio\7.0\Bpl\tmswizd2010.bpl">TMS Component Pack Wizards</Excluded_Packages>
+					</Excluded_Packages>
+					<ProjectProperties>
+						<ProjectProperties Name="AutoShowDeps">False</ProjectProperties>
+						<ProjectProperties Name="ManagePaths">True</ProjectProperties>
+						<ProjectProperties Name="VerifyPackages">True</ProjectProperties>
+					</ProjectProperties>
+				</CPlusPlusBuilder.Personality>
+				<ModelSupport>False</ModelSupport>
+			</BorlandProject>
+			<ProjectFileVersion>12</ProjectFileVersion>
+		</ProjectExtensions>
+	</Project>
